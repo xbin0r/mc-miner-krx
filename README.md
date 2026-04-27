@@ -19,6 +19,7 @@ Latest release includes:
 
 - fix for the stratum reconnect loop caused by dev fee rotation
 - reconnect when the stratum pool goes idle or disappears silently
+- `--password` support for custom stratum passwords and fixed diff
 - stable behavior with `--devfund-percent 0`
 - HiveOS custom miner package
 - HiveOS package layout aligned with common custom miner bundles
@@ -37,6 +38,15 @@ Latest release includes:
 ```
 
 `--threads 0` lets the miner auto-pick CPU threads. GPU plugins are loaded automatically when available.
+
+For fixed difficulty on Miningcore-compatible pools, pass a stratum password such as:
+
+```bash
+./keryx-miner \
+  --keryxd-address stratum+tcp://eu.miningcrib.com:7213 \
+  --mining-address keryx:YOUR_WALLET_ADDRESS \
+  --password 'x;d=1000000000'
+```
 
 ## Dev fee
 
@@ -71,6 +81,12 @@ Optional extra config:
 
 ```bash
 --devfund-percent 0
+```
+
+For fixed diff in HiveOS extra config, you can also use:
+
+```bash
+--password 'x;d=1000000000'
 ```
 
 ## Notes

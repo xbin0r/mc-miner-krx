@@ -2,6 +2,7 @@
 
 - fixed the stratum reconnect loop caused by dev fee rotation
 - reconnects automatically when the stratum pool goes idle or stops responding
+- fixed unexpected graceful reconnect loops during long-running stratum sessions
 - added `--password` support for custom stratum passwords and fixed diff
 - fixed stable operation when running with `--devfund-percent 0`
 - Linux x86_64 release with bundled CUDA and OpenCL plugins

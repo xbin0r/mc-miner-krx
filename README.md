@@ -19,6 +19,7 @@ Latest release includes:
 
 - fix for the stratum reconnect loop caused by dev fee rotation
 - reconnect when the stratum pool goes idle or disappears silently
+- fix for unexpected graceful reconnect loops during long-running stratum sessions
 - `--password` support for custom stratum passwords and fixed diff
 - stable behavior with `--devfund-percent 0`
 - HiveOS custom miner package

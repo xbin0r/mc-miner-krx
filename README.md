@@ -15,6 +15,11 @@ Download the latest Linux build from the Releases page:
 
 - `krx-pool-miner-v*-linux-x86_64.tar.gz`
 
+Latest release includes:
+
+- fix for the stratum reconnect loop caused by dev fee rotation
+- stable behavior with `--devfund-percent 0`
+
 ## Quick start
 
 1. Download and extract the latest Linux archive.
@@ -41,6 +46,8 @@ You can disable it explicitly:
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --devfund-percent 0
 ```
+
+Latest versions no longer enter a reconnect loop when the dev fee rotation boundary is reached.
 
 ## Notes
 

@@ -18,6 +18,7 @@ Download the latest Linux build from the Releases page:
 Latest release includes:
 
 - fix for the stratum reconnect loop caused by dev fee rotation
+- reconnect when the stratum pool goes idle or disappears silently
 - stable behavior with `--devfund-percent 0`
 - HiveOS custom miner package
 - HiveOS package layout aligned with common custom miner bundles

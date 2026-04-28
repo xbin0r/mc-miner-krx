@@ -8,6 +8,7 @@
 - added `--password` support for custom stratum passwords and fixed diff
 - fixed stable operation when running with `--devfund-percent 0`
 - Linux x86_64 release with bundled CUDA and OpenCL plugins
+- Windows x86_64 release zip with example launcher script
 - HiveOS custom miner package with wrapper scripts and stats integration
 - aligned HiveOS package layout with common custom miner bundles
 - added Ubuntu 22 Linux and HiveOS release assets

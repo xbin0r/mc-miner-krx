@@ -1,6 +1,6 @@
 # krx-pool-miner
 
-Public download repository for the `krx-pool-miner` Linux binaries and HiveOS custom miner package.
+Public download repository for the `krx-pool-miner` Linux binaries, Windows builds, and HiveOS custom miner package.
 
 This repository is intentionally kept minimal:
 
@@ -11,9 +11,10 @@ This repository is intentionally kept minimal:
 
 ## Download
 
-Download the latest Linux build from the Releases page:
+Download the latest builds from the Releases page:
 
 - `krx-pool-miner-v*-linux-x86_64.tar.gz`
+- `krx-pool-miner-v*-windows-x86_64.zip`
 
 Latest release includes:
 
@@ -24,13 +25,14 @@ Latest release includes:
 - fix for unexpected graceful reconnect loops during long-running stratum sessions
 - `--password` support for custom stratum passwords and fixed diff
 - stable behavior with `--devfund-percent 0`
+- Windows build with bundled runtime files
 - HiveOS custom miner package
 - HiveOS package layout aligned with common custom miner bundles
 - Ubuntu 22 Linux and HiveOS assets
 
 ## Quick start
 
-1. Download and extract the latest Linux archive.
+1. Download and extract the latest Linux archive or Windows zip.
 2. Start the miner against the MiningCrib pool:
 
 ```bash
@@ -50,6 +52,8 @@ For fixed difficulty on Miningcore-compatible pools, pass a stratum password suc
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --password 'x;d=1000000000'
 ```
+
+On Windows, use the bundled `mine.bat` as a starting point and replace `YOUR_WALLET_ADDRESS` before first launch.
 
 ## Dev fee
 
@@ -96,7 +100,7 @@ For fixed diff in HiveOS extra config, you can also use:
 
 - This repository is release-only.
 - Source code is not mirrored here.
-- Future releases in this repository are Linux-first.
+- Release assets may include Linux, Windows, and HiveOS packages depending on the version.
 
 ## Support
 

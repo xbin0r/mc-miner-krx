@@ -18,6 +18,7 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- Linux/HiveOS binaries rebuilt with Ubuntu 22 glibc baseline for wider compatibility
 - panic guard for plugin option parsing (avoids full crash if one plugin panics)
 - reconnect immediately when the stratum submit channel dies
 - stop hashing stale work after a dead stratum session instead of running until manual restart

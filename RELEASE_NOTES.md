@@ -1,5 +1,7 @@
 ## What's new
 
+- Linux/HiveOS artifacts rebuilt on Ubuntu 22 toolchain (glibc 2.35 baseline)
+- fixes runtime compatibility issue on some HiveOS/Ubuntu22 rigs (`GLIBC_2.39 not found`)
 - panic guard around plugin option parsing:
   - prevents full miner crash when one plugin (for example CUDA on AMD rigs) panics during CLI option handling
   - miner now continues with remaining available plugins

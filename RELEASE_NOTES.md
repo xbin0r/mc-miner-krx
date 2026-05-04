@@ -1,5 +1,8 @@
 ## What's new
 
+- panic guard around plugin option parsing:
+  - prevents full miner crash when one plugin (for example CUDA on AMD rigs) panics during CLI option handling
+  - miner now continues with remaining available plugins
 - reconnects immediately when the stratum submit channel dies
 - stops hashing stale work after a dead stratum session instead of running until manual restart
 - fixed the stratum reconnect loop caused by dev fee rotation

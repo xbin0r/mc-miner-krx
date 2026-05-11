@@ -25,7 +25,7 @@
 ## Pool quick start
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7212 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --threads 0
@@ -34,7 +34,7 @@
 For fixed diff:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7213 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --password 'x;d=1000000000'
@@ -43,7 +43,7 @@ For fixed diff:
 For custom payout threshold:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7212 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --min-payout 1000
@@ -52,7 +52,7 @@ For custom payout threshold:
 To disable the dev fee:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7212 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --devfund-percent 0

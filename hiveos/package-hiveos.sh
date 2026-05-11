@@ -12,7 +12,7 @@ binary_dir="$(realpath "$2")"
 output_tar="$(realpath "$3")"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 staging_dir="$(mktemp -d)"
-package_root="${staging_dir}/krx-pool-miner"
+package_root="${staging_dir}/mc-miner"
 
 cleanup() {
   rm -rf "$staging_dir"
@@ -29,9 +29,9 @@ install -m 0755 "${script_dir}/h-stop.sh" "${package_root}/h-stop.sh"
 sed "s/^CUSTOM_VERSION=.*/CUSTOM_VERSION=${release_name}/" \
   "${script_dir}/h-manifest.conf" > "${package_root}/h-manifest.conf"
 
-install -m 0755 "${binary_dir}/keryx-miner" "${package_root}/keryx-miner"
+install -m 0755 "${binary_dir}/mc-miner" "${package_root}/mc-miner"
 install -m 0644 "${binary_dir}/libkeryxcuda.so" "${package_root}/libkeryxcuda.so"
 install -m 0644 "${binary_dir}/libkeryxopencl.so" "${package_root}/libkeryxopencl.so"
 
 mkdir -p "$(dirname "$output_tar")"
-tar -C "${staging_dir}" -czf "${output_tar}" krx-pool-miner
+tar -C "${staging_dir}" -czf "${output_tar}" mc-miner

@@ -1,6 +1,6 @@
-# krx-pool-miner
+# mc-miner-release
 
-Public download repository for the `krx-pool-miner` Linux binaries, Windows builds, and HiveOS custom miner package.
+Public download repository for `mc-miner` Linux binaries, Windows builds, and HiveOS custom miner package.
 
 This repository is intentionally kept minimal:
 
@@ -13,8 +13,8 @@ This repository is intentionally kept minimal:
 
 Download the latest builds from the Releases page:
 
-- `krx-pool-miner-v*-linux-x86_64.tar.gz`
-- `krx-pool-miner-v*-windows-x86_64.zip`
+- `mc-miner-v*-linux-x86_64.tar.gz`
+- `mc-miner-v*-windows-x86_64.zip`
 
 Latest release includes:
 
@@ -40,7 +40,7 @@ Latest release includes:
 2. Start the miner against the MiningCrib pool:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7212 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --threads 0
@@ -51,7 +51,7 @@ Latest release includes:
 For fixed difficulty on Miningcore-compatible pools, pass a stratum password such as:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7213 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --password 'x;d=1000000000'
@@ -60,7 +60,7 @@ For fixed difficulty on Miningcore-compatible pools, pass a stratum password suc
 To request a higher pool payout threshold on supported pools:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7212 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --min-payout 1000
@@ -75,7 +75,7 @@ The miner includes a dev fee by default.
 You can disable it explicitly:
 
 ```bash
-./keryx-miner \
+./mc-miner \
   --keryxd-address stratum+tcp://eu.miningcrib.com:7212 \
   --mining-address keryx:YOUR_WALLET_ADDRESS \
   --devfund-percent 0
@@ -87,8 +87,8 @@ Latest versions no longer enter a reconnect loop when the dev fee rotation bound
 
 HiveOS users can use the bundled custom miner package from Releases:
 
-- `krx-pool-miner-v*-linux-hiveos.tar.gz`
-- `krx-pool-miner-v*-linux-ubuntu22-hiveos.tar.gz`
+- `mc-miner-v*-linux-hiveos.tar.gz`
+- `mc-miner-v*-linux-ubuntu22-hiveos.tar.gz`
 
 Recommended pool URLs:
 

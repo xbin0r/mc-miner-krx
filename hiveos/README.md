@@ -1,6 +1,6 @@
 # HiveOS Custom Miner
 
-This package lets you add `krx-pool-miner` to HiveOS as a custom miner.
+This package lets you add `mc-miner` to HiveOS as a custom miner.
 
 ## Flight sheet values
 
@@ -20,7 +20,7 @@ Port `7213` starts at a higher fixed difficulty and can ramp with VarDiff up to 
 
 The HiveOS package includes:
 
-- `keryx-miner`
+- `mc-miner`
 - `libkeryxcuda.so`
 - `libkeryxopencl.so`
 - `h-manifest.conf`

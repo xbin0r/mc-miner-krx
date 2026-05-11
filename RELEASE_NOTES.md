@@ -1,5 +1,10 @@
 ## What's new
 
+- version bump to `v0.19` (MC-Miner GPU line)
+- improved practical hashrate stability under Stratum by reducing unnecessary workload throttling
+- added live GPU telemetry in miner logs:
+  - `temperature: <C>`
+  - `power: <W>`
 - added `--min-payout` support:
   - sends `min-payout=<amount>` in the Stratum password
   - lets supported pools store a per-miner payout threshold

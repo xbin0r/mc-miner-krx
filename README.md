@@ -16,14 +16,11 @@ Download the latest builds from the Releases page:
 - `mc-miner-v*-linux-x86_64.tar.gz`
 - `mc-miner-v*-windows-x86_64.zip`
 
-## Release Tags
-
-- Preferred tag format for all new releases: `v0.18`, `v0.19`, `v0.20`, ...
-- Legacy tags like `v0.2.1-GPU-0.18` are still supported by the release workflow.
-- The workflow auto-matches both naming styles to the correct files in `artifacts/`.
-
 Latest release includes:
 
+- version bump to `v0.19` (MC-Miner GPU line)
+- improved practical hashrate stability under Stratum
+- added GPU telemetry in logs: `temperature` and `power`
 - `--min-payout` support for requesting a higher pool payout threshold over Stratum
 - OPoI escrow public-key option for direct gRPC mining experiments
 - Linux/HiveOS binaries rebuilt with Ubuntu 22 glibc baseline for wider compatibility

@@ -15,10 +15,33 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v4
 
+      - name: Resolve release assets
+        id: assets
+        shell: bash
+        run: |
+          set -euo pipefail
+          tag="${GITHUB_REF_NAME}"
+          short="${tag#v}"
+          legacy="v0.2.1-GPU-${short}"
+
+          mapfile -t files < <(find artifacts -maxdepth 1 -type f \
+            \( -name "*${tag}*.tar.gz" -o -name "*${tag}*.zip" -o -name "*${legacy}*.tar.gz" -o -name "*${legacy}*.zip" \) \
+            | sort)
+
+          if [ "${#files[@]}" -eq 0 ]; then
+            echo "No matching artifacts found for tag ${tag}" >&2
+            exit 1
+          fi
+
+          printf "Matched artifacts:\n%s\n" "${files[*]}"
+          {
+            echo "files<<EOF"
+            printf '%s\n' "${files[@]}"
+            echo "EOF"
+          } >> "$GITHUB_OUTPUT"
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v2
         with:
           body_path: RELEASE_NOTES.md
-          files: |
-            artifacts/*${{ github.ref_name }}*.tar.gz
-            artifacts/*${{ github.ref_name }}*.zip
+          files: ${{ steps.assets.outputs.files }}

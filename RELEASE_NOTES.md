@@ -1,5 +1,12 @@
 ## What's new
 
+- version bump to `v0.22` (release packaging update)
+- Linux assets are now published in explicit compatibility variants:
+  - `mc-miner-v0.22-linux-ubuntu22-x86_64.tar.gz`
+  - `mc-miner-v0.22-linux-ubuntu24-x86_64.tar.gz`
+  - `mc-miner-v0.22-linux-ubuntu26-x86_64.tar.gz`
+- HiveOS asset:
+  - `mc-miner-v0.22-linux-hiveos.tar.gz`
 - version bump to `v0.21`
 - fixed HiveOS startup failure caused by incompatible glibc requirement (`GLIBC_2.39`)
 - Linux/HiveOS binaries are now built against an Ubuntu 22 (glibc 2.35) baseline

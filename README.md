@@ -18,6 +18,9 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- version bump to `v0.22` with explicit Linux package variants:
+  - `ubuntu22`, `ubuntu24`, `ubuntu26` x86_64
+- HiveOS package remains separate as `mc-miner-v0.22-linux-hiveos.tar.gz`
 - version bump to `v0.21`
 - fixed HiveOS `GLIBC_2.39` startup error by rebuilding on Ubuntu 22 baseline
 - one recommended HiveOS package: `mc-miner-v0.21-linux-hiveos.tar.gz`

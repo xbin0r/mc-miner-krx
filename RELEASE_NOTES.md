@@ -5,6 +5,8 @@
   - `mc-miner-v0.22-linux-ubuntu22-x86_64.tar.gz`
   - `mc-miner-v0.22-linux-ubuntu24-x86_64.tar.gz`
   - `mc-miner-v0.22-linux-ubuntu26-x86_64.tar.gz`
+- Windows asset:
+  - `mc-miner-v0.22-windows-x86_64.zip`
 - HiveOS asset:
   - `mc-miner-v0.22-linux-hiveos.tar.gz`
 - version bump to `v0.21`

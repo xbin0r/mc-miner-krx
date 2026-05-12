@@ -18,6 +18,9 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- version bump to `v0.20`
+- HiveOS custom miner package fixed (`h-manifest.conf` and `h-*.sh` wrappers included)
+- HiveOS package root folder aligned with custom miner name
 - version bump to `v0.19` (MC-Miner GPU line)
 - improved practical hashrate stability under Stratum
 - added GPU telemetry in logs: `temperature` and `power`

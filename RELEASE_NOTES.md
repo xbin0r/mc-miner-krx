@@ -1,5 +1,9 @@
 ## What's new
 
+- version bump to `v0.20`
+- HiveOS custom miner package fixed:
+  - includes `h-manifest.conf`, `h-config.sh`, `h-run.sh`, `h-stop.sh`, `h-stats.sh`
+  - package root folder now matches HiveOS custom miner `Name`
 - version bump to `v0.19` (MC-Miner GPU line)
 - improved practical hashrate stability under Stratum by reducing unnecessary workload throttling
 - added live GPU telemetry in miner logs:

@@ -18,6 +18,9 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- version bump to `v0.21`
+- fixed HiveOS `GLIBC_2.39` startup error by rebuilding on Ubuntu 22 baseline
+- one recommended HiveOS package: `mc-miner-v0.21-linux-hiveos.tar.gz`
 - version bump to `v0.20`
 - HiveOS custom miner package fixed (`h-manifest.conf` and `h-*.sh` wrappers included)
 - HiveOS package root folder aligned with custom miner name

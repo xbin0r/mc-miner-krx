@@ -1,5 +1,10 @@
 ## What's new
 
+- version bump to `v0.21`
+- fixed HiveOS startup failure caused by incompatible glibc requirement (`GLIBC_2.39`)
+- Linux/HiveOS binaries are now built against an Ubuntu 22 (glibc 2.35) baseline
+- simplified HiveOS packaging to one recommended package:
+  - `mc-miner-v0.21-linux-hiveos.tar.gz`
 - version bump to `v0.20`
 - HiveOS custom miner package fixed:
   - includes `h-manifest.conf`, `h-config.sh`, `h-run.sh`, `h-stop.sh`, `h-stats.sh`

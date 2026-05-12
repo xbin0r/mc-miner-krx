@@ -18,6 +18,9 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- version bump to `v0.23`
+- fixed GPU worker initialization panic that could abort HiveOS with exit code 134
+- HiveOS package root verified as `mc-miner-v0.23-linux/`
 - version bump to `v0.22` with explicit Linux package variants:
   - `ubuntu22`, `ubuntu24`, `ubuntu26` x86_64
 - HiveOS package remains separate as `mc-miner-v0.22-linux-hiveos.tar.gz`

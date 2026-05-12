@@ -12,14 +12,15 @@ binary_dir="$(realpath "$2")"
 output_tar="$(realpath "$3")"
 script_dir="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 staging_dir="$(mktemp -d)"
-package_root="${staging_dir}/mc-miner"
+package_name="$(basename "$output_tar" .tar.gz)"
+package_name="${package_name%-hiveos}"
+package_root="${staging_dir}/${package_name}"
 
 cleanup() {
   rm -rf "$staging_dir"
 }
 trap cleanup EXIT
 
-install -m 0755 "${script_dir}/h-config.sh" "${staging_dir}/h-config.sh"
 mkdir -p "${package_root}"
 
 install -m 0755 "${script_dir}/h-config.sh" "${package_root}/h-config.sh"
@@ -34,4 +35,4 @@ install -m 0644 "${binary_dir}/libkeryxcuda.so" "${package_root}/libkeryxcuda.so
 install -m 0644 "${binary_dir}/libkeryxopencl.so" "${package_root}/libkeryxopencl.so"
 
 mkdir -p "$(dirname "$output_tar")"
-tar -C "${staging_dir}" -czf "${output_tar}" mc-miner
+tar -C "${staging_dir}" -czf "${output_tar}" "${package_name}"

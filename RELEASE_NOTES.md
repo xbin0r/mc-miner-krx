@@ -1,9 +1,18 @@
 ## What's new
 
-- version bump to `v0.23`
-- fixed CUDA/OpenCL worker initialization failures so the miner logs the error instead of aborting with exit code 134
-- HiveOS package root verified as `mc-miner-v0.23-linux/`
+- version bump to `v0.24`
+- rebuilt RTX 40xx/Ada `sm_89` CUDA PTX with CUDA 12.4 for HiveOS driver 550 compatibility
+- Ubuntu 22 baseline build verified: packaged binaries require max `GLIBC_2.34`
+- CUDA worker initialization errors now include the failing step instead of a generic `unknown error`
+- HiveOS package root verified as `mc-miner-v0.24-linux/`
 - release artifacts:
+  - `mc-miner-v0.24-linux-ubuntu22-x86_64.tar.gz`
+  - `mc-miner-v0.24-linux-ubuntu24-x86_64.tar.gz`
+  - `mc-miner-v0.24-linux-ubuntu26-x86_64.tar.gz`
+  - `mc-miner-v0.24-linux-hiveos.tar.gz`
+
+Previous `v0.23` release artifacts:
+
   - `mc-miner-v0.23-linux-ubuntu22-x86_64.tar.gz`
   - `mc-miner-v0.23-linux-ubuntu24-x86_64.tar.gz`
   - `mc-miner-v0.23-linux-ubuntu26-x86_64.tar.gz`

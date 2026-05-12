@@ -18,6 +18,10 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- version bump to `v0.24`
+- rebuilt RTX 40xx/Ada `sm_89` CUDA PTX with CUDA 12.4 for HiveOS driver 550 compatibility
+- Ubuntu 22 baseline build verified: packaged binaries require max `GLIBC_2.34`
+- HiveOS package root verified as `mc-miner-v0.24-linux/`
 - version bump to `v0.23`
 - fixed GPU worker initialization panic that could abort HiveOS with exit code 134
 - HiveOS package root verified as `mc-miner-v0.23-linux/`

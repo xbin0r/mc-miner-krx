@@ -18,6 +18,11 @@ Download the latest builds from the Releases page:
 
 Latest release includes:
 
+- version bump to `v0.25`
+- added explicit RTX 50xx/Blackwell CUDA profile `sm_120`
+- retained CUDA coverage across `1xxx/2xxx/3xxx/4xxx/5xxx` families
+- Ubuntu 22 baseline build verified: packaged binaries require max `GLIBC_2.34`
+- HiveOS package root verified as `mc-miner-v0.25-linux/`
 - version bump to `v0.24`
 - rebuilt RTX 40xx/Ada `sm_89` CUDA PTX with CUDA 12.4 for HiveOS driver 550 compatibility
 - Ubuntu 22 baseline build verified: packaged binaries require max `GLIBC_2.34`
